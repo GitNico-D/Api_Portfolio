@@ -26,7 +26,6 @@ class ProjectController extends AbstractController
         // $response->header->set('Content-Type', 'application/json');
 
         // return $response;
-        // dump('dsdsdsqd');die;
         return new Response($data, 200, [
             'Content-Type' => 'application/json'
         ]);
