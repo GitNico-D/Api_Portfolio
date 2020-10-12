@@ -14,7 +14,7 @@ use Symfony\Component\Serializer\SerializerInterface;
 class ProjectController extends AbstractController
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/project", name="project")
      */
     public function index()
     {

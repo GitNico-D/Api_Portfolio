@@ -10,7 +10,7 @@ class EducationController extends AbstractController
     /**
      * @Route("/education", name="education")
      */
-    public function ecucationList()
+    public function educationList()
     {        
     }
 }
