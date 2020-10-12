@@ -11,7 +11,6 @@ class CategoryController extends AbstractController
      * @Route("/category", name="category")
      */
     public function categoryList()
-    {
-        
+    {        
     }
 }
