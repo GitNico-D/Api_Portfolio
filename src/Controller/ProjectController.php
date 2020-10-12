@@ -21,35 +21,9 @@ class ProjectController extends AbstractController
     {
         $projects = $projectRepository->findAll();
         $data = $serializer->serialize($projects, 'json');
-
-        // $response = new Response($data);
-        // $response->header->set('Content-Type', 'application/json');
-
-        // return $response;
         return new Response($data, 200, [
             'Content-Type' => 'application/json'
         ]);
-    }
-
-    /**
-     * @Route("/projects", name="create_project", methods={"POST"})
-     */
-    public function createProject()
-    {
-    }
-
-    /**
-     * @Route("/project/{id}", name="get_project", methods={"GET"})
-     */
-    public function getProject()
-    {
-    }
-
-    /**
-     * @Route("/project/{id}", name="update_project", methods={"PUT"})
-     */
-    public function updateProject()
-    {
-    }
+    }  
 }
 
